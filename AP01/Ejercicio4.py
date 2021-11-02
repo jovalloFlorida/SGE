@@ -1,4 +1,9 @@
 # Ejercicio 4. Escriba un PROGRAMA que pida dos números enteros y que escriba si el mayor es múltiplo del menor
+
+# Borramos la pantalla
+from os import system
+system("cls")
+
 num1 = int(input("Escribe un numero entero: "))
 num2 = int(input("Escriba un segundo numero: "))
 
@@ -16,4 +21,3 @@ elif num1 < num2:
         print("El mayor es %s y no es multiplo de %s" % (str(num2), str(num1)))
 else:
     print("Los numeros son iguales")
-
