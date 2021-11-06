@@ -3,12 +3,16 @@
 # Si buscas en Internet, cuidado, ya que aparecen otras formas obsoletas y/o no recomendadas de hacerlo.
 # También aparecen otras formas recomendadas, pero quizá de mayor complejidad.
 
+import sys
 # Borramos la pantalla
-import subprocess
 from os import system
 system("cls")
 
-url = input("Introduce la URL o IP de un servidor: ")
-ping = "ping "
+try:
+    url = input("Introduce la URL o IP de un servidor: ")
+    ping = "ping "
+except:
+    print("No has intriducido los valores de forma correcta")
+    sys.exit()
 
 system(ping + url)

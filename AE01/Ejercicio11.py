@@ -1,5 +1,6 @@
 # Escribe una función que, dado un número n y un intervalo comprendido entre min y max, devuelva cuántos números entre min y max son múltiplos de n y la suma de todos ellos.
 # Haz un programa que pruebe dicha función ante la entrada de n, min y max por parte del usuario.
+import sys
 
 # Borramos la pantalla
 from os import system
@@ -13,8 +14,12 @@ def MultiplosIntervalo(n, min, max):
             print(min)
 
 
-n = int(input("Introduce un numero: "))
-min = int(input("Introduce en minimo del intervalo: "))
-max = int(input("Introduce en minimo del intervalo: "))
+try:
+    n = int(input("Introduce un numero: "))
+    min = int(input("Introduce en minimo del intervalo: "))
+    max = int(input("Introduce en minimo del intervalo: "))
 
-MultiplosIntervalo(n, min, max)
+    MultiplosIntervalo(n, min, max)
+except:
+    print("No has intriducido los valores de forma correcta")
+    sys.exit()
