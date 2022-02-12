@@ -10,9 +10,9 @@ sge1 = float(input("Introduce la nota de la primera evaluacion: "))
 sge2 = float(input("Introduce la nota de la segunda evaluacion: "))
 sge3 = float(input("Introduce la nota de la tercera evaluacion: "))
 
-if (sge1 >= 5 and sge2 >= 5 and sge3 >= 5):
+if sge1 >= 5 and sge2 >= 5 and sge3 >= 5:
     print("\nEl alumno esta aprobado en convocatoria ordinaria.")
-elif (sge2 >= 5 and sge3 >= 5):
+elif sge2 >= 5 and sge3 >= 5:
     print("\nEl alumno esta aprobado en convocatoria ordinaria, aunque tenga la primera evaluacion suspendida.")
 else:
     print("\nEl alumno no esta aprobado en convocatoria ordinaria, tendra que presentarse a la convocatoria extraordinaria.")
